@@ -16,7 +16,7 @@ espNetTime combines an ESP32 microcontroller, a GPS module, and various software
 - **LED** for status indication (optional)
 
 ## Software Requirements
-- **Arduino IDE** with ESP8266 Board Manager
+- **Arduino IDE** with ESP32 Board Manager
 - **Libraries**:
   - `TinyGPS++`
   - `ESPAsyncUDP`
@@ -48,12 +48,7 @@ espNetTime combines an ESP32 microcontroller, a GPS module, and various software
 3. **Upload the Code**
    - Open the project in the Arduino IDE.
    - Select the appropriate board and port.
-   - Update the Wi-Fi credentials in the code:
-     ```cpp
-     const char* ssid = "your-SSID";
-     const char* password = "your-PASSWORD";
-     ```
-   - Upload the code to the ESP8266.
+   - Upload the code to the ESP32.
 
 ## Usage
 
@@ -61,10 +56,10 @@ espNetTime combines an ESP32 microcontroller, a GPS module, and various software
    The ESP32 will connect to the specified Wi-Fi network upon startup.
 
 2. **Access the Web Dashboard**
-   Open a web browser and navigate to the IP address of the ESP8266. The dashboard displays GPS data, system time, and network information.
+   Open a web browser and navigate to the IP address of the ESP32. The dashboard displays GPS data, system time, and network information.
 
 3. **NTP Server**
-   Configure NTP clients on the network to use the ESP8266 IP address as the NTP server for precise time synchronization.
+   Configure NTP clients on the network to use the ESP32 IP address as the NTP server for precise time synchronization.
 
 ## Web Dashboard Features
 - **GPS Information**: Displays latitude, longitude, and the number of satellites.
