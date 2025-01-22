@@ -1,4 +1,4 @@
-# espNetTime: ESP8266 GPS NTP Server with Real-Time Web Dashboard
+# espNetTime: ESP32 GPS NTP Server with Real-Time Web Dashboard
 
 ## Overview
 espNetTime combines an ESP32 microcontroller, a GPS module, and various software components to create a GPS-enabled NTP server with a real-time web-based dashboard. The system synchronizes local time with GPS time and serves this accurate time over the network using NTP (Network Time Protocol). It also provides a web interface displaying GPS data, system time, and network information.
@@ -24,7 +24,6 @@ espNetTime combines an ESP32 microcontroller, a GPS module, and various software
   - `Ticker`
   - `TimeLib`
   - `LittleFS`
-  - `SoftwareSerial`
 
 ## Circuit Diagram
 ![Circuit Diagram](path/to/your/circuit-diagram.png)
@@ -33,7 +32,7 @@ espNetTime combines an ESP32 microcontroller, a GPS module, and various software
 
 1. **Clone the Repository**
     ```sh
-    git clone https://github.com/yourusername/espNetTime.git
+    git clone https://github.com/jonp92/espNetTime.git
     cd espNetTime
     ```
 
