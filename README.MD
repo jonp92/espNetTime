@@ -1,17 +1,16 @@
 # espNetTime: ESP8266 GPS NTP Server with Real-Time Web Dashboard
 
 ## Overview
-espNetTime combines an ESP8266 microcontroller, a GPS module, and various software components to create a GPS-enabled NTP server with a real-time web-based dashboard. The system synchronizes local time with GPS time and serves this accurate time over the network using NTP (Network Time Protocol). It also provides a web interface displaying GPS data, system time, and network information.
+espNetTime combines an ESP32 microcontroller, a GPS module, and various software components to create a GPS-enabled NTP server with a real-time web-based dashboard. The system synchronizes local time with GPS time and serves this accurate time over the network using NTP (Network Time Protocol). It also provides a web interface displaying GPS data, system time, and network information.
 
 ## Features
 - **GPS Integration**: Retrieves accurate time and location data from a GPS module.
 - **NTP Server**: Serves precise time to network clients using NTP.
 - **Web Dashboard**: Real-time web interface displaying GPS information, system time, NTP server status, and network details.
-- **OTA Updates**: Supports over-the-air firmware updates.
 - **Responsive Design**: Ensures usability across various devices and screen sizes.
 
 ## Hardware Requirements
-- **ESP8266 Development Board** (e.g., NodeMCU)
+- **ESP32 Development Board**
 - **GPS Module** (e.g., NEO-6M)
 - **Wires and Breadboard** for connections
 - **LED** for status indication (optional)
@@ -46,7 +45,6 @@ espNetTime combines an ESP8266 microcontroller, a GPS module, and various softwa
    - Ticker
    - TimeLib
    - LittleFS
-   - SoftwareSerial
 
 3. **Upload the Code**
    - Open the project in the Arduino IDE.
@@ -61,7 +59,7 @@ espNetTime combines an ESP8266 microcontroller, a GPS module, and various softwa
 ## Usage
 
 1. **Connect to Wi-Fi**
-   The ESP8266 will connect to the specified Wi-Fi network upon startup.
+   The ESP32 will connect to the specified Wi-Fi network upon startup.
 
 2. **Access the Web Dashboard**
    Open a web browser and navigate to the IP address of the ESP8266. The dashboard displays GPS data, system time, and network information.
@@ -73,7 +71,7 @@ espNetTime combines an ESP8266 microcontroller, a GPS module, and various softwa
 - **GPS Information**: Displays latitude, longitude, and the number of satellites.
 - **Time Information**: Shows GPS time, local system time, and the offset between them.
 - **NTP Server Status**: Indicates whether the NTP server is running and its IP address.
-- **Network Information**: Displays Wi-Fi SSID and RSSI (signal strength).
+
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
